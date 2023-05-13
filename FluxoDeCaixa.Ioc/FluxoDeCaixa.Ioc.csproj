@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FluxoDeCaixa.App\FluxoDeCaixa.App.csproj" />
+    <ProjectReference Include="..\FluxoDeCaixa.Domain\FluxoDeCaixa.Domain.csproj" />
+    <ProjectReference Include="..\FluxoDeCaixa.Repository\FluxoDeCaixa.Repository.csproj" />
+    <ProjectReference Include="..\FluxoDeCaixa.Service\FluxoDeCaixa.Service.csproj" />
+    <ProjectReference Include="..\FluxodeCaixa.ViewModel\FluxodeCaixa.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
