@@ -1545,6 +1545,10 @@
         }
       },
       "FluxodeCaixa.ViewModel/1.0.0": {
+        "dependencies": {
+          "Dietcode.Api.Core.Results": "1.1.5",
+          "Dietcode.Core.DomainValidator": "1.1.0"
+        },
         "runtime": {
           "FluxodeCaixa.ViewModel.dll": {}
         }

@@ -3,27 +3,28 @@
 using System;
 using System.Collections.Generic;
 
-namespace FluxoDeCaixa.Domain.Entity;
-
-public partial class LancamentoViewModel
+namespace FluxodeCaixa.ViewModel
 {
-    public LancamentoViewModel()
+    public partial class LancamentoViewModel
     {
-        Descricao = string.Empty;
-        Observacao = string.Empty;
+        public LancamentoViewModel()
+        {
+            Descricao = string.Empty;
+            Observacao = string.Empty;
+        }
+
+        public int LancamentoId { get; set; }
+
+        public DateTime Data { get; set; }
+
+        public decimal Valor { get; set; }
+
+        public int TipoLancamentoId { get; set; }
+
+        public string Descricao { get; set; }
+
+        public string Observacao { get; set; }
+
+        public virtual TipoLancamentoViewModel TipoLancamento { get; set; }
     }
-
-    public int LancamentoId { get; set; }
-
-    public DateTime Data { get; set; }
-
-    public decimal Valor { get; set; }
-
-    public int TipoLancamentoId { get; set; }
-
-    public string Descricao { get; set; }
-
-    public string Observacao { get; set; }
-
-    public virtual TipoLancamentoViewModel TipoLancamento { get; set; }
 }

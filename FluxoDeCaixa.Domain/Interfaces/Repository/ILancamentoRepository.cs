@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluxoDeCaixa.Domain.Entity;
+using FluxoDeCaixa.Domain.ObjectValues;
 
 namespace FluxoDeCaixa.Domain.Interfaces.Repository
 {
-    public interface ILancamentoRepository
+    public interface ILancamentoRepository : IBaseRepository<Lancamento>
     {
+        Task<ConsolidadoLancamento> ObterConsolidadoPorData(DateTime data);
+        Task<ConsolidadoLancamento> ObterConsolidadoDia();
     }
 }

@@ -25,5 +25,7 @@ public partial class Lancamento
 
     public string Observacao { get; set; }
 
+    public bool Estornado { get; set; }
+
     public virtual TipoLancamento TipoLancamento { get; set; }
 }

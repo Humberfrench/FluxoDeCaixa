@@ -4,18 +4,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace FluxoDeCaixa.Domain.Entity;
-
-public partial class TipoLancamentoViewModel
+namespace FluxodeCaixa.ViewModel
 {
-    public TipoLancamentoViewModel()
+    public partial class TipoLancamentoViewModel
     {
-        Lancamento = new List<LancamentoViewModel>();
-        Descricao = string.Empty;
+        public TipoLancamentoViewModel()
+        {
+            Lancamento = new List<LancamentoViewModel>();
+            Descricao = string.Empty;
+        }
+        public int TipoLancamentoId { get; set; }
+
+        public string Descricao { get; set; }
+
+        public virtual IList<LancamentoViewModel> Lancamento { get; set; }
     }
-    public int TipoLancamentoId { get; set; }
-
-    public string Descricao { get; set; }
-
-    public virtual IList<LancamentoViewModel> Lancamento { get; set; } 
 }

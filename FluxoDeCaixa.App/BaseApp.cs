@@ -1,9 +1,10 @@
-﻿using Dietcode.Core.DomainValidator;
+﻿using Dietcode.Api.Core.Results;
+using Dietcode.Core.DomainValidator;
 using FluxoDeCaixa.Domain.Interfaces.Repository;
 
 namespace FluxoDeCaixa.App
 {
-    public class BaseApp<T> where T : new()
+    public class BaseApp<T> : AppServiceBase where T : new()
     {
         private readonly IUnitOfWork uow;
         protected ValidationResult<T> baseValidationResult;
@@ -19,14 +20,43 @@ namespace FluxoDeCaixa.App
             uow.BeginTransaction();
         }
 
-        public async Task Commit()
+        public async Task CommitAync()
         {
-            var retorno = await Task.Run(() => uow.SaveChanges());
+            var retorno = await uow.SaveChangesAsync();
 
             if (!retorno.Valid)
             {
                 retorno.Erros.ToList().ForEach(e => baseValidationResult.Add(e.Message));
             }
+        }
+        public void Commit()
+        {
+            var retorno = uow.SaveChanges();
+
+            if (!retorno.Valid)
+            {
+                retorno.Erros.ToList().ForEach(e => baseValidationResult.Add(e.Message));
+            }
+        }
+
+        protected ErrorValidation ConvertValidationErrors(List<ValidationError> erros)
+        {
+            string erro;
+            if(erros.Count == 1)
+            {
+                erro = erros.First().Message;
+            }
+            else
+            {
+                erro = string.Join(" *** ", erros);
+            }
+
+            return new ErrorValidation
+            {
+                Code = "10000",
+                Message = erro
+            };
+
         }
     }
 }
