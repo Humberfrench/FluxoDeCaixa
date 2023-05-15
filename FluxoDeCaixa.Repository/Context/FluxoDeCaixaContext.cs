@@ -1,5 +1,6 @@
 using FluxoDeCaixa.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,23 @@ namespace FluxoDeCaixa.Repository.Context
         public virtual DbSet<Lancamento> Lancamento { get; set; }
 
         public virtual DbSet<TipoLancamento> TipoLancamento { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+                var connectionString = configuration.GetConnectionString("FluxoDeCaixaContext");
+
+                //optionsBuilder.UseLazyLoadingProxies();
+                optionsBuilder.UseSqlServer(connectionString);
+            }
+        }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

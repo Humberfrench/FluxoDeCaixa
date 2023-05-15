@@ -101,7 +101,7 @@ namespace FluxoDeCaixa.Service
                 return retorno;
             }
 
-            var dados = await lancamentoRepository.Pesquisar(p => p.Data.Month == mes &&
+            var dados = (await lancamentoRepository.ObterTodos()).Where(p => p.Data.Month == mes &&
                                                                   p.Data.Year == ano);
 
             retorno.Retorno = dados.ToList();

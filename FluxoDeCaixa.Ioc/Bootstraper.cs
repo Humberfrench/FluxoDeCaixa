@@ -9,6 +9,8 @@ namespace FluxoDeCaixa.Ioc
 {
     using Domain.Interfaces.Repository;
     using Domain.Interfaces.Services;
+    using FluxodeCaixa.ViewModel.Interfaces;
+    using FluxoDeCaixa.App;
     using Repository;
     using Repository.Context;
     using Repository.Interfaces;
@@ -40,6 +42,14 @@ namespace FluxoDeCaixa.Ioc
             //Others
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
+
+            services.AddScoped<ILancamentoApp, LancamentoApp>();
+            services.AddScoped<ILancamentoService, LancamentoService>();
+            services.AddScoped<ILancamentoRepository, LancamentoRepository>();
+            //services.AddScoped<ILancamentoService, LancamentoService>();
+            //services.AddScoped<ILancamentoService, LancamentoService>();
+            //services.AddScoped<ILancamentoService, LancamentoService>();
+
         }
     }
 }

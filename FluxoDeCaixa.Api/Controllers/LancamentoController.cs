@@ -7,6 +7,68 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxoDeCaixa.Api.Controllers
 {
+
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+    //Corrigir RETORNOS
+
+
     [ApiController]
     [Route("api/Lancamento")]
     [SwaggerTag("Lançamentos de Operações")]
