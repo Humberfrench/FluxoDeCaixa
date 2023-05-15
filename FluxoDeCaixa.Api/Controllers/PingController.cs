@@ -6,10 +6,8 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace FluxoDeCaixa.Api.Controllers
 {
     [ApiController]
-    //[ApiExplorerSettings(IgnoreApi = true)]
     [Route("api/Ping")]
     [SwaggerTag("Validação do Status do Serviço")]
-    //[ExcludeFromDescription ]
     public class PingController : ApiControllerBase
     {
 

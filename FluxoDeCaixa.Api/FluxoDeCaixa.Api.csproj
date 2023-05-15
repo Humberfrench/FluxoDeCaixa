@@ -10,6 +10,8 @@
     <PackageReference Include="Dietcode.Api.Core" Version="1.1.5" />
     <PackageReference Include="Dietcode.Core.DomainValidator" Version="1.1.0" />
     <PackageReference Include="Dietcode.Core.Lib" Version="1.7.0" />
+    <PackageReference Include="ElmahCore" Version="2.1.2" />
+    <PackageReference Include="ElmahCore.Sql" Version="2.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
@@ -19,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FluxoDeCaixa.Ioc\FluxoDeCaixa.Ioc.csproj" />
     <ProjectReference Include="..\FluxodeCaixa.ViewModel\FluxodeCaixa.ViewModel.csproj" />
   </ItemGroup>
 

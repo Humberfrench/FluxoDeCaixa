@@ -7,6 +7,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxoDeCaixa.Api.Controllers
 {
+    [ApiController]
+    [Route("api/Lancamento")]
+    [SwaggerTag("Lançamentos de Operações")]
     public class LancamentoController : ApiControllerBase
     {
         private readonly ILancamentoApp lancamentoApp;
@@ -109,6 +112,14 @@ namespace FluxoDeCaixa.Api.Controllers
             return Completed<ValidationResult>(retorno);
         }
 
+        [HttpGet("Consolidado")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os lançamentos no Consolidados. A informação é do dia atual")]
         public async Task<IActionResult> ObterLancamentosConsolidado()
         {
             var retorno = await lancamentoApp.ObterLancamentosConsolidado();
@@ -116,13 +127,30 @@ namespace FluxoDeCaixa.Api.Controllers
             return Completed<ValidationResult>(retorno);
         }
 
-        public async Task<IActionResult> ObterLancamentosConsolidadoPorData(DateTime data)
+        [HttpGet("Consolidado/{data}")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os lançamentos no Consolidados. A informação é do dia informado como data em string dd-mm-aaaa")]
+        public async Task<IActionResult> ObterLancamentosConsolidadoPorData(string data)
         {
-            var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorData(data);
+            var date = StringToDate(data);
+            var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorData(date);
 
             return Completed<ValidationResult>(retorno);
         }
 
+        [HttpGet("Consolidado/sql/{data}")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os lançamentos no Consolidados (usando procedure). A informação é do dia informado como data em string dd-mm-aaaa")]
         public async Task<IActionResult> ObterLancamentosConsolidadoPorDataSql(DateTime data)
         {
             var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorDataSql(data);
@@ -130,6 +158,14 @@ namespace FluxoDeCaixa.Api.Controllers
             return Completed<ValidationResult>(retorno);
         }
 
+        [HttpGet("Consolidado/sql")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os lançamentos no Consolidados (usando procedure). A informação é do dia informado como data em string dd-mm-aaaa")]
         public async Task<IActionResult> ObterLancamentosConsolidadoSql()
         {
             var retorno = await lancamentoApp.ObterLancamentosConsolidadoSql();
