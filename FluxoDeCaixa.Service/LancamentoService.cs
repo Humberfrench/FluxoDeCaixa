@@ -23,29 +23,36 @@ namespace FluxoDeCaixa.Service
         {
             var retorno = new ValidationResult();
 
-            if (lancamento.TipoLancamentoId == 0)
+            if (!lancamento.IsValid())
             {
-                retorno.Add("Tipo de lançamento não informado");
+                retorno.GetErros(lancamento.ValidationResult.Erros);
                 return retorno;
             }
 
-            if (lancamento.Valor <= 0)
-            {
-                retorno.Add("Valor do lançamento não informado");
-                return retorno;
-            }
+            //comment abaixo para usar o meio validador acima
+            //if (lancamento.TipoLancamentoId == 0)
+            //{
+            //    retorno.Add("Tipo de lançamento não informado");
+            //    return retorno;
+            //}
 
-            if (lancamento.Data == DateTime.MinValue)
-            {
-                retorno.Add("Data do lançamento não informado");
-                return retorno;
-            }
+            //if (lancamento.Valor <= 0)
+            //{
+            //    retorno.Add("Valor do lançamento não informado");
+            //    return retorno;
+            //}
 
-            if (lancamento.Descricao == string.Empty)
-            {
-                retorno.Add("Descrição do lançamento não informado");
-                return retorno;
-            }
+            //if (lancamento.Data == DateTime.MinValue)
+            //{
+            //    retorno.Add("Data do lançamento não informado");
+            //    return retorno;
+            //}
+
+            //if (lancamento.Descricao == string.Empty)
+            //{
+            //    retorno.Add("Descrição do lançamento não informado");
+            //    return retorno;
+            //}
 
 
             await lancamentoRepository.Adicionar(lancamento);
@@ -122,7 +129,7 @@ namespace FluxoDeCaixa.Service
 
         }
 
-         public async Task<ValidationResult<List<Lancamento>>> EstornosPorMes(int mes, int ano)
+        public async Task<ValidationResult<List<Lancamento>>> EstornosPorMes(int mes, int ano)
         {
 
             var retorno = new ValidationResult<List<Lancamento>>();
@@ -146,7 +153,7 @@ namespace FluxoDeCaixa.Service
 
         }
 
-       public async Task<ValidationResult<List<Lancamento>>> LancamentosPorFaixaData(DateTime dataInicial, DateTime dataFinal)
+        public async Task<ValidationResult<List<Lancamento>>> LancamentosPorFaixaData(DateTime dataInicial, DateTime dataFinal)
         {
 
             var retorno = new ValidationResult<List<Lancamento>>();

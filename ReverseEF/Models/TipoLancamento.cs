@@ -11,5 +11,5 @@ public partial class TipoLancamento
 
     public string Descricao { get; set; }
 
-    public virtual ICollection<Lancamento> Lancamento { get; set; } = new List<Lancamento>();
+    public virtual ICollection<Lancamento> Lancamento { get; } = new List<Lancamento>();
 }

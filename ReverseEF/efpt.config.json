@@ -23,7 +23,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "dietcode\\dev.FluxoCaixa.dbo",
+   "UiHint": "DIETCODE\\DEV.FluxoCaixa",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

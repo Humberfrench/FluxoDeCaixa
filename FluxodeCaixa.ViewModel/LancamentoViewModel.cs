@@ -22,7 +22,5 @@ namespace FluxodeCaixa.ViewModel
 
         public string Observacao { get; set; }
 
-        [JsonIgnore]
-        public virtual TipoLancamentoViewModel TipoLancamento { get; set; }
     }
 }

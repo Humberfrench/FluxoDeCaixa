@@ -39,7 +39,6 @@ public partial class FluxoCaixaContext : DbContext
 
         modelBuilder.Entity<TipoLancamento>(entity =>
         {
-            entity.Property(e => e.TipoLancamentoId).ValueGeneratedNever();
             entity.Property(e => e.Descricao)
                 .IsRequired()
                 .HasMaxLength(50)

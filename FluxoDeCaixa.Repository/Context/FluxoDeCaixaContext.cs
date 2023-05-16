@@ -55,6 +55,7 @@ namespace FluxoDeCaixa.Repository.Context
         {
             modelBuilder.Entity<Lancamento>(entity =>
             {
+                entity.HasKey(e => e.LancamentoId);
                 entity.Property(e => e.Data).HasColumnType("date");
                 entity.Property(e => e.Descricao)
                     .IsRequired()
@@ -73,7 +74,8 @@ namespace FluxoDeCaixa.Repository.Context
 
             modelBuilder.Entity<TipoLancamento>(entity =>
             {
-                entity.Property(e => e.TipoLancamentoId).ValueGeneratedNever();
+                entity.HasKey(e => e.TipoLancamentoId);
+                // entity.Property(e => e.TipoLancamentoId).ValueGeneratedNever();
                 entity.Property(e => e.Descricao)
                     .IsRequired()
                     .HasMaxLength(50)
