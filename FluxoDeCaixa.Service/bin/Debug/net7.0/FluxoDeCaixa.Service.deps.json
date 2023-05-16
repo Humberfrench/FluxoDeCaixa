@@ -71,7 +71,7 @@
     "Dietcode.Core.Lib/1.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KZQQrfD1Pif3FMuQzebx8XyddfFCJLQU6+3PGlmEpkBcdsYbF5NPH4YaIdMZYRGYBlNSM+DgoreGR1k1oJpQhg==",
+      "sha512": "sha512-4U2YYmcCVo8CYBt9/LxsWqUK1mfrMUd0qmadzamI7Z1JrYjiYBMsdhQrakA/I9bIfCyLF3/WkugW2BuRfJnTBw==",
       "path": "dietcode.core.lib/1.7.0",
       "hashPath": "dietcode.core.lib.1.7.0.nupkg.sha512"
     },

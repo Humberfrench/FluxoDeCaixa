@@ -70,6 +70,7 @@ namespace FluxoDeCaixa.Service
             }
 
             lancamento.Estornado = true;
+            lancamento.Observacao += "**ESTORNADO";
 
             await lancamentoRepository.Atualizar(lancamento);
             retorno.Retorno = "Lancamento estornado com sucesso";
@@ -203,20 +204,20 @@ namespace FluxoDeCaixa.Service
             //E com o select basico no repositorio, não vou ferir a regra de negocio. e Se desejar trocar o SQL server
             //Por outro banco, não vou ter problemas. Apenas uma pequena adaptação no EF.
             //Então não precisarei migrar procs, ngocio, adaptar elas a linguagem do novo banco, etc.
-            var debitos = (await lancamentoRepository.Pesquisar(p => p.TipoLancamentoId == EnumTipoLancamento.Debito.Int()
-                                                                 && p.Data.Date == DateTime.Now.Date
-                                                                 && !p.Estornado))
-                                                                .Sum(l => l.Valor);
-            var creditos = (await lancamentoRepository.Pesquisar(p => p.TipoLancamentoId == EnumTipoLancamento.Credito.Int()
-                                                                 && p.Data.Date == DateTime.Now.Date
-                                                                 && !p.Estornado))
-                                                                .Sum(l => l.Valor);
+            var debitos = (await lancamentoRepository.ObterTodos()).Where(p => p.TipoLancamentoId == EnumTipoLancamento.Debito.Int()
+                                                                       && p.Data.Date == data
+                                                                       && !p.Estornado)
+                                                                      .Sum(l => l.Valor);
+            var creditos = (await lancamentoRepository.ObterTodos()).Where(p => p.TipoLancamentoId == EnumTipoLancamento.Credito.Int()
+                                                                        && p.Data.Date == data
+                                                                        && !p.Estornado)
+                                                                       .Sum(l => l.Valor);
 
             var saldo = creditos - debitos;
 
             retorno.Retorno = new ConsolidadoLancamento()
             {
-                Data = DateTime.Now,
+                Data = data,
                 ConsolidadoCredito = creditos,
                 ConsolidadoDebito = debitos,
                 SaldoDoDia = saldo

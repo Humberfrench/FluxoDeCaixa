@@ -1,5 +1,4 @@
 ﻿using Dietcode.Api.Core.Results;
-using Dietcode.Core.DomainValidator;
 
 namespace FluxodeCaixa.ViewModel.Interfaces
 {

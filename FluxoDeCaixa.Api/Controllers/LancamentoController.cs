@@ -97,8 +97,8 @@ namespace FluxoDeCaixa.Api.Controllers
 
         [HttpGet("Hoje")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -107,13 +107,13 @@ namespace FluxoDeCaixa.Api.Controllers
         {
             var retorno = await lancamentoApp.LancamentosDoDia();
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }
 
         [HttpGet("PorData/{date}")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -124,7 +124,7 @@ namespace FluxoDeCaixa.Api.Controllers
             var data = StringToDate(date);
             var retorno = await lancamentoApp.LancamentosPorData(data);
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }
 
         [HttpGet("PorData/{dataInicial}/{dataFinal}")]
@@ -141,13 +141,13 @@ namespace FluxoDeCaixa.Api.Controllers
             var fim = StringToDate(dataFinal);
             var retorno = await lancamentoApp.LancamentosPorFaixaData(inicio, fim);
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }
 
         [HttpGet("PorMes/{mes}/{ano}")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -156,13 +156,13 @@ namespace FluxoDeCaixa.Api.Controllers
         {
             var retorno = await lancamentoApp.LancamentosPorMes(mes, ano);
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }
 
         [HttpPost("Lancar")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -176,8 +176,8 @@ namespace FluxoDeCaixa.Api.Controllers
 
         [HttpGet("Consolidado")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -186,13 +186,13 @@ namespace FluxoDeCaixa.Api.Controllers
         {
             var retorno = await lancamentoApp.ObterLancamentosConsolidado();
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<ConsolidadoLancamentoViewModel>>(retorno);
         }
 
         [HttpGet("Consolidado/{data}")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -202,28 +202,29 @@ namespace FluxoDeCaixa.Api.Controllers
             var date = StringToDate(data);
             var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorData(date);
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<ConsolidadoLancamentoViewModel>>(retorno);
         }
 
         [HttpGet("Consolidado/sql/{data}")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obtem os lançamentos no Consolidados (usando procedure). A informação é do dia informado como data em string dd-mm-aaaa")]
-        public async Task<IActionResult> ObterLancamentosConsolidadoPorDataSql(DateTime data)
+        public async Task<IActionResult> ObterLancamentosConsolidadoPorDataSql(string data)
         {
-            var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorDataSql(data);
+            var date = StringToDate(data);
+            var retorno = await lancamentoApp.ObterLancamentosConsolidadoPorDataSql(date);
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<ConsolidadoLancamentoViewModel>>(retorno);
         }
 
         [HttpGet("Consolidado/sql")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ValidationResult), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<ConsolidadoLancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
@@ -232,7 +233,7 @@ namespace FluxoDeCaixa.Api.Controllers
         {
             var retorno = await lancamentoApp.ObterLancamentosConsolidadoSql();
 
-            return Completed<ValidationResult>(retorno);
+            return Completed<ValidationResult<ConsolidadoLancamentoViewModel>>(retorno);
         }
 
 

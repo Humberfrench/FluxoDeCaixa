@@ -88,9 +88,9 @@ namespace FluxoDeCaixa.App
         {
             var retorno = new ValidationResult<List<LancamentoViewModel>>();
             var consulta = await service.LancamentosDoDia();
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>();
 
-            if(retorno.Retorno.Count == 0)
+            if (retorno.Retorno.Count == 0)
             {
                 return NotFound("No results returned");
             }
@@ -108,7 +108,7 @@ namespace FluxoDeCaixa.App
                 return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
             }
 
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>();
 
             if (retorno.Retorno.Count == 0)
             {
@@ -128,7 +128,7 @@ namespace FluxoDeCaixa.App
                 return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
             }
 
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>();
 
             if (retorno.Retorno.Count == 0)
             {
@@ -148,7 +148,7 @@ namespace FluxoDeCaixa.App
                 return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
             }
 
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>(8);
 
             if (retorno.Retorno.Count == 0)
             {
@@ -160,68 +160,48 @@ namespace FluxoDeCaixa.App
 
         public async Task<MethodResult> ObterLancamentosConsolidado()
         {
-            var retorno = new ValidationResult<List<LancamentoViewModel>>();
-            var consulta = await service.LancamentosDoDia();
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
-
-            if (retorno.Retorno.Count == 0)
-            {
-                return NotFound("No results returned");
-            }
+            var retorno = new ValidationResult<ConsolidadoLancamentoViewModel>();
+            var consulta = await service.ObterLancamentosConsolidado();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<ConsolidadoLancamentoViewModel>();
 
             return Ok(retorno);
         }
 
         public async Task<MethodResult> ObterLancamentosConsolidadoPorData(DateTime data)
         {
-            var retorno = new ValidationResult<List<LancamentoViewModel>>();
-            var consulta = await service.LancamentosDoDia();
+            var retorno = new ValidationResult<ConsolidadoLancamentoViewModel>();
+            var consulta = await service.ObterLancamentosConsolidadoPorData(data);
 
             if (consulta.Invalid)
             {
                 return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
             }
 
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
-
-            if (retorno.Retorno.Count == 0)
-            {
-                return NotFound("No results returned");
-            }
+            retorno.Retorno = consulta.Retorno.ConvertObjects<ConsolidadoLancamentoViewModel>();
 
             return Ok(retorno);
         }
 
         public async Task<MethodResult> ObterLancamentosConsolidadoPorDataSql(DateTime data)
         {
-            var retorno = new ValidationResult<List<LancamentoViewModel>>();
-            var consulta = await service.LancamentosDoDia();
+            var retorno = new ValidationResult<ConsolidadoLancamentoViewModel>();
+            var consulta = await service.ObterLancamentosConsolidadoPorDataSql(data);
 
             if (consulta.Invalid)
             {
                 return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
             }
 
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
-
-            if (retorno.Retorno.Count == 0)
-            {
-                return NotFound("No results returned");
-            }
+            retorno.Retorno = consulta.Retorno.ConvertObjects<ConsolidadoLancamentoViewModel>();
 
             return Ok(retorno);
         }
 
         public async Task<MethodResult> ObterLancamentosConsolidadoSql()
         {
-            var retorno = new ValidationResult<List<LancamentoViewModel>>();
-            var consulta = await service.LancamentosDoDia();
-            retorno.Retorno = consulta.ConvertObjects<List<LancamentoViewModel>>();
-
-            if (retorno.Retorno.Count == 0)
-            {
-                return NotFound("No results returned");
-            }
+            var retorno = new ValidationResult<ConsolidadoLancamentoViewModel>();
+            var consulta = await service.ObterLancamentosConsolidadoSql();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<ConsolidadoLancamentoViewModel>();
 
             return Ok(retorno);
         }

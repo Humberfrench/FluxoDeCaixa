@@ -123,8 +123,8 @@
                 //c.InjectStylesheet("/themes/3.x/theme-outline.css");
                 c.EnableTryItOutByDefault();
 
-                c.DocumentTitle = "Credpay Detran Br";
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Credpay Detran Br v3");
+                c.DocumentTitle = "Fluxo de Caixa";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fluxo de Caixa v3");
                 c.DefaultModelsExpandDepth(-1); // Disable swagger schemas at bottom
                 var aspnetcore_urls = Environment.GetEnvironmentVariable("ASPNETCORE_URLS") ?? string.Empty;
 

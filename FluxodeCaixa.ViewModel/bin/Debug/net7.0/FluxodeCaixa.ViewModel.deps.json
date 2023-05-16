@@ -659,7 +659,7 @@
     "Dietcode.Api.Core.Results/1.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c4W9+taZUBpOJO032Wy3QZ8+FEK1+Rgdv/+8k+mA/2e78cGSQTl7beFMOxKKCjaLAozZDQv1eEtMWcYWqsyWKA==",
+      "sha512": "sha512-8QMFmYtx8mBsYDOugFxvJcKnOLbJFXQX3qUhEOvluYTAZqC4Uf1HhTl2eDMx66YWKE+6u5KKHBSWNCW3PXPhLw==",
       "path": "dietcode.api.core.results/1.1.5",
       "hashPath": "dietcode.api.core.results.1.1.5.nupkg.sha512"
     },
