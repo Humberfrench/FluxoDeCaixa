@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 namespace FluxoDeCaixa.Repository.Context
 {
@@ -33,6 +35,14 @@ namespace FluxoDeCaixa.Repository.Context
                    .AddJsonFile("appsettings.json")
                    .Build();
                 var connectionString = configuration.GetConnectionString("FluxoDeCaixaContext");
+                // Obtenha uma instância do LoggerFactory
+                var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.AddConsole(); // Registra o log no console
+                    //builder.AddDebug(); // Se preferir, também pode adicionar o log no debugger
+                });
+                // Configure o DbContext para usar o loggerFactory
+                optionsBuilder.UseLoggerFactory(loggerFactory);
 
                 //optionsBuilder.UseLazyLoadingProxies();
                 optionsBuilder.UseSqlServer(connectionString);

@@ -98,6 +98,20 @@ namespace FluxoDeCaixa.App
             return Ok(retorno);
         }
 
+        public async Task<MethodResult> EstornosDoDia()
+        {
+            var retorno = new ValidationResult<List<LancamentoViewModel>>();
+            var consulta = await service.EstornosDoDia();
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>();
+
+            if (retorno.Retorno.Count == 0)
+            {
+                return NotFound("No results returned");
+            }
+
+            return Ok(retorno);
+        }
+
         public async Task<MethodResult> LancamentosPorData(DateTime data)
         {
             var retorno = new ValidationResult<List<LancamentoViewModel>>();
@@ -142,6 +156,25 @@ namespace FluxoDeCaixa.App
         {
             var retorno = new ValidationResult<List<LancamentoViewModel>>();
             var consulta = await service.LancamentosPorMes(mes, ano);
+
+            if (consulta.Invalid)
+            {
+                return BadRequest(ConvertValidationErrors(consulta.Erros.ToList()));
+            }
+
+            retorno.Retorno = consulta.Retorno.ConvertObjects<List<LancamentoViewModel>>(8);
+
+            if (retorno.Retorno.Count == 0)
+            {
+                return NotFound("No results returned");
+            }
+
+            return Ok(retorno);
+        }
+        public async Task<MethodResult> EstornosPorMes(int mes, int ano)
+        {
+            var retorno = new ValidationResult<List<LancamentoViewModel>>();
+            var consulta = await service.EstornosPorMes(mes, ano);
 
             if (consulta.Invalid)
             {

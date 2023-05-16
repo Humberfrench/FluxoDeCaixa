@@ -9,9 +9,11 @@ namespace FluxoDeCaixa.Domain.Interfaces.Services
     {
         Task<ValidationResult> Estornar(int id);
         Task<ValidationResult<List<Lancamento>>> LancamentosDoDia();
+        Task<ValidationResult<List<Lancamento>>> EstornosDoDia();
         Task<ValidationResult<List<Lancamento>>> LancamentosPorData(DateTime data);
         Task<ValidationResult<List<Lancamento>>> LancamentosPorFaixaData(DateTime dataInicial, DateTime dataFinal);
         Task<ValidationResult<List<Lancamento>>> LancamentosPorMes(int mes, int ano);
+        Task<ValidationResult<List<Lancamento>>> EstornosPorMes(int mes, int ano);
         Task<ValidationResult> Lancar(Lancamento lancamento);
         Task<ValidationResult<ConsolidadoLancamento>> ObterLancamentosConsolidado();
         Task<ValidationResult<ConsolidadoLancamento>> ObterLancamentosConsolidadoPorData(DateTime data);

@@ -22,15 +22,15 @@ namespace FluxoDeCaixa.Repository
             this.contextManager = contextManager;
             Context = contextManager.GetContext();
             DbSet = Context.Set<TEntity>();
-            try
-            {
-                var lista = DbSet.ToList();
+            //try
+            //{
+            //    var lista = DbSet.ToList();
 
-            }
-            catch (Exception ex)
-            {
-                var x = ex.Message;
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    var x = ex.Message;
+            //}
             connection = new SqlConnection(contextManager.GetConnectionString);
         }
 
@@ -89,7 +89,8 @@ namespace FluxoDeCaixa.Repository
 
         public async virtual Task<IEnumerable<TEntity>> ObterTodos()
         {
-            return await DbSet.ToListAsync();
+            var lista = await DbSet.ToListAsync();
+            return lista;
         }
 
         public async virtual Task<IEnumerable<TEntity>> ObterTodosPaginado(int pagina, int registros)

@@ -109,6 +109,20 @@ namespace FluxoDeCaixa.Api.Controllers
 
             return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }
+        [HttpGet("Estornos")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os Estornos do dia")]
+        public async Task<IActionResult> EstornosDoDia()
+        {
+            var retorno = await lancamentoApp.EstornosDoDia();
+
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
+        }
 
         [HttpGet("PorData/{date}")]
         //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
@@ -155,6 +169,21 @@ namespace FluxoDeCaixa.Api.Controllers
         public async Task<IActionResult> LancamentosPorMes(int mes, int ano)
         {
             var retorno = await lancamentoApp.LancamentosPorMes(mes, ano);
+
+            return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
+        }
+
+        [HttpGet("EstornosMes/{mes}/{ano}")]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ValidationResult<List<LancamentoViewModel>>), StatusCodes.Status406NotAcceptable)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status401Unauthorized)]
+        [SwaggerOperation(Summary = "Obtem os lançamentos no mês desejado.")]
+        public async Task<IActionResult> EstornosPorMes(int mes, int ano)
+        {
+            var retorno = await lancamentoApp.EstornosPorMes(mes, ano);
 
             return Completed<ValidationResult<List<LancamentoViewModel>>>(retorno);
         }

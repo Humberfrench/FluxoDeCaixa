@@ -80,12 +80,23 @@ namespace FluxoDeCaixa.Service
         public async Task<ValidationResult<List<Lancamento>>> LancamentosDoDia()
         {
             var retorno = new ValidationResult<List<Lancamento>>();
-            var dados = await lancamentoRepository.Pesquisar(p => p.Data == DateTime.Now.Date);
+            var dados = await lancamentoRepository.Pesquisar(p => p.Data == DateTime.Now.Date && !p.Estornado);
 
             retorno.Retorno = dados.ToList();
 
             return retorno;
         }
+
+        public async Task<ValidationResult<List<Lancamento>>> EstornosDoDia()
+        {
+            var retorno = new ValidationResult<List<Lancamento>>();
+            var dados = await lancamentoRepository.Pesquisar(p => p.Data == DateTime.Now.Date && p.Estornado);
+
+            retorno.Retorno = dados.ToList();
+
+            return retorno;
+        }
+
 
         public async Task<ValidationResult<List<Lancamento>>> LancamentosPorMes(int mes, int ano)
         {
@@ -103,7 +114,7 @@ namespace FluxoDeCaixa.Service
             }
 
             var dados = (await lancamentoRepository.ObterTodos()).Where(p => p.Data.Month == mes &&
-                                                                  p.Data.Year == ano);
+                                                                  p.Data.Year == ano && !p.Estornado);
 
             retorno.Retorno = dados.ToList();
 
@@ -111,7 +122,31 @@ namespace FluxoDeCaixa.Service
 
         }
 
-        public async Task<ValidationResult<List<Lancamento>>> LancamentosPorFaixaData(DateTime dataInicial, DateTime dataFinal)
+         public async Task<ValidationResult<List<Lancamento>>> EstornosPorMes(int mes, int ano)
+        {
+
+            var retorno = new ValidationResult<List<Lancamento>>();
+            if (mes == 0)
+            {
+                retorno.Add("Mês não informado");
+                return retorno;
+            }
+            if (ano == 0)
+            {
+                retorno.Add("Mês não informado");
+                return retorno;
+            }
+
+            var dados = (await lancamentoRepository.ObterTodos()).Where(p => p.Data.Month == mes &&
+                                                                  p.Data.Year == ano && p.Estornado);
+
+            retorno.Retorno = dados.ToList();
+
+            return retorno;
+
+        }
+
+       public async Task<ValidationResult<List<Lancamento>>> LancamentosPorFaixaData(DateTime dataInicial, DateTime dataFinal)
         {
 
             var retorno = new ValidationResult<List<Lancamento>>();
@@ -128,7 +163,8 @@ namespace FluxoDeCaixa.Service
             }
 
             var dados = await lancamentoRepository.Pesquisar(p => p.Data >= dataInicial
-                                                               && p.Data <= dataFinal);
+                                                               && p.Data <= dataFinal
+                                                               && !p.Estornado);
 
             retorno.Retorno = dados.ToList();
 
@@ -145,7 +181,7 @@ namespace FluxoDeCaixa.Service
                 return retorno;
             }
 
-            var dados = await lancamentoRepository.Pesquisar(p => p.Data == data);
+            var dados = await lancamentoRepository.Pesquisar(p => p.Data == data && !p.Estornado);
 
             retorno.Retorno = dados.ToList();
 
