@@ -664,7 +664,8 @@
       "System.Threading.Tasks.Extensions/4.5.1": {},
       "FluxoDeCaixa.Domain/1.0.0": {
         "dependencies": {
-          "Dietcode.Core.DomainValidator": "1.1.0"
+          "Dietcode.Core.DomainValidator": "1.1.0",
+          "Dietcode.Core.Lib": "1.7.0"
         },
         "runtime": {
           "FluxoDeCaixa.Domain.dll": {}

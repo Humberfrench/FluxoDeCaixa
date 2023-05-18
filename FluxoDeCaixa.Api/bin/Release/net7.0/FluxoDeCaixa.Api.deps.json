@@ -2093,7 +2093,8 @@
       },
       "FluxoDeCaixa.Domain/1.0.0": {
         "dependencies": {
-          "Dietcode.Core.DomainValidator": "1.1.0"
+          "Dietcode.Core.DomainValidator": "1.1.0",
+          "Dietcode.Core.Lib": "1.7.0"
         },
         "runtime": {
           "FluxoDeCaixa.Domain.dll": {}

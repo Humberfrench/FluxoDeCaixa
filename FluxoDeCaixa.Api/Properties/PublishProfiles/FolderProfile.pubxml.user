@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Desenvolvimento\Sistemas\FluxoDeCaixa\Publish</_PublishTargetUrl>
-    <History>True|2023-05-16T17:14:20.6189538Z;True|2023-05-16T11:13:28.3726502-03:00;True|2023-05-16T11:05:12.5641495-03:00;</History>
+    <History>True|2023-05-16T19:25:53.0651213Z;True|2023-05-16T14:14:20.6189538-03:00;True|2023-05-16T11:13:28.3726502-03:00;True|2023-05-16T11:05:12.5641495-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
