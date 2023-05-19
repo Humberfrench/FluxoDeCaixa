@@ -19,6 +19,10 @@ dotnet nuget push <caminho do arquivo >\nome.nupkg -s <caminho destino>
   
 É provável que precise usar o command prompt como administrador e ir até a pasta que tem o nuget.exe que está dentro das pastas do visual Studio.
   
+  ### Add o site de origem
+  http://nuget.dietcode.com.br/nuget
+  Nas opções do Visual Studio vc pode por os pacotes via webn sem precisar de rodar. Esta é uma opção mais segura e facil
+  
   ##Setup Banco.
  No repositório existe uma pasta SQL. Dentro dela tem uma cópia de backup do banco. E em outra pasta os scripts de criação do banco, duas tabelas e duas procedures.
 O projeto se rodar vai apontar para este banco: Server=dietcode.com.br\\Dev. Ele está em minha casa em um servidor meu interno. É um servidor genérico de dev. Não tem problemas o uso e abuso de inserir e mexer nos dados.
