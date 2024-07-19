@@ -7,6 +7,9 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
+using FluxoCaixa.Domain.Master.Entity;
+using FluxoCaixa.Domain.Master.Interfaces;
+using Dietcode.Core.Lib;
 namespace FluxoCaixa.Worker.Subscriber
 {
     public class LancamentoCreatedSubscriber : IHostedService
@@ -14,9 +17,11 @@ namespace FluxoCaixa.Worker.Subscriber
         private readonly IModel _channel;
         private const string QUEUE = "Lancamentos";
         private readonly ILancamentoService lancamentoService;
-        public LancamentoCreatedSubscriber(ILancamentoService lancamentoService)
+        readonly IRepositoryLog repositoryLog;
+        public LancamentoCreatedSubscriber(ILancamentoService lancamentoService,IRepositoryLog repositoryLog)
         {
             this.lancamentoService = lancamentoService;
+            this.repositoryLog = repositoryLog;
             var connectionFactory = new ConnectionFactory
             {
                 HostName = "201.0.21.4",
@@ -57,8 +62,20 @@ namespace FluxoCaixa.Worker.Subscriber
 
         private async Task ProcessMessage(Message message)
         {
+            var log = new Log
+            {
+                Data = DateTime.Now,
+                Descricao = "Processando Mensagem",
+                Service = "Worker",
+                Method = "ProcessMessage",
+                Json = message.ToJson(),
+                Erros = ""
+            };
+            await repositoryLog.Add(log);
+
             // Process message
             var lancamentos = JsonConvert.DeserializeObject<Lancamentos>(message.Content);
+
             await lancamentoService.Lancar(lancamentos);
         }
     }

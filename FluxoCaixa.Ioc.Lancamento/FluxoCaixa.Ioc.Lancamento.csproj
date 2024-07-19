@@ -17,6 +17,7 @@
 	  <ProjectReference Include="..\FluxoCaixa.Bus.Lancamentos\FluxoCaixa.Bus.Lancamentos.csproj" />
 	  <ProjectReference Include="..\FluxoCaixa.Domain.Lancamentos\FluxoCaixa.Domain.Lancamentos.csproj" />
 	  <ProjectReference Include="..\FluxoCaixa.Repository.Lancamentos\FluxoCaixa.Repository.Lancamentos.csproj" />
+	  <ProjectReference Include="..\FluxoCaixa.Repositoy.Log\FluxoCaixa.Repositoy.Log.csproj" />
 	  <ProjectReference Include="..\FluxoCaixa.Service.Lancamentos\FluxoCaixa.Service.Lancamentos.csproj" />
 	</ItemGroup>
 

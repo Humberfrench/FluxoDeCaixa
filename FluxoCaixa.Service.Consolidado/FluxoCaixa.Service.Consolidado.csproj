@@ -10,4 +10,8 @@
     <PackageReference Include="Dietcode.Core.Lib" Version="1.8.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FluxoCaixa.Domain.Consolidado\FluxoCaixa.Domain.Consolidado.csproj" />
+  </ItemGroup>
+
 </Project>

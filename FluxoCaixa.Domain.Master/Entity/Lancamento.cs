@@ -1,21 +1,15 @@
 ﻿
-using Dietcode.Core.DomainValidator;
+using Dietcode.Core.Lib;
 using Dietcode.Database.Attribute;
-using FluxoCaixa.Domain.Master.Validations;
 
 namespace FluxoCaixa.Domain.Master.Entity;
 
 [TableName("Lancamento")]
-public partial class Lancamento
+public partial class Lancamento : BaseEntity
 {
-    private readonly ValidationResult validationResult;
-    private bool? isValid;
 
     public Lancamento()
     {
-        validationResult = new ValidationResult();
-        isValid = null;
-
         Descricao = string.Empty;
         Observacao = string.Empty;
         TipoLancamento = new TipoLancamento();
@@ -40,35 +34,30 @@ public partial class Lancamento
     public virtual TipoLancamento TipoLancamento { get; set; }
 
 
-    [WriteCol(false)]
-    public virtual ValidationResult ValidationResult => validationResult;
-
-    public virtual bool IsValid()
+    public override bool IsValid()
     {
-        if (!isValid.HasValue)
+        isValid = false;
+        if (Descricao.IsNullOrEmptyOrWhiteSpace())
         {
-            var validationDados = Validar(this);
-            if (validationDados.Invalid)
-            {
-                validationDados.Erros.ToList().ForEach(e => validationResult.Add(e));
-            }
-            return validationResult.Valid;
+            Erros.Add("Descrição não informada");
         }
-        return isValid.Value;
+        if (Data == DateTime.MinValue)
+        {
+            Erros.Add("Data não informada");
+
+        }
+        if (Valor == 0)
+        {
+            Erros.Add("Valor não informado");
+        }
+        if (TipoLancamentoId == 0)
+        {
+            Erros.Add("Tipo de lançamento não informado");
+        }
+        isValid = Erros.Count == 0;
+
+        return isValid;
 
     }
-
-    public virtual ValidationResult Validar(Lancamento entity)
-    {
-        var entidadeDescricaoValidate = new LancamentoConsistente();
-        var validationResultEntidade = entidadeDescricaoValidate.Validar(entity);
-        if (validationResultEntidade.Invalid)
-        {
-            validationResult.GetErros(validationResultEntidade.Erros);
-            validationResultEntidade.Erros.ToList().ForEach(e => validationResult.Add(e));
-        }
-        return validationResult;
-    }
-
 
 }

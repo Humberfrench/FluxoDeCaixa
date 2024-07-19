@@ -175,3 +175,5 @@ E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\Flu
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repository.Lancamentos.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.pdb
+E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
+E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb

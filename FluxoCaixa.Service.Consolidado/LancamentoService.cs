@@ -1,6 +1,8 @@
-﻿namespace FluxoCaixa.Service.Lancamentos
+﻿using FluxoCaixa.Domain.Consolidado.Interfaces.Services;
+
+namespace FluxoCaixa.Service.Lancamentos
 {
-    public class LancamentoService
+    public class LancamentoService: ILancamentoService
     {
 
     }

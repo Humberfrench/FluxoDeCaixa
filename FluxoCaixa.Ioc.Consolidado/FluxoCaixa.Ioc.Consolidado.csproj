@@ -12,4 +12,13 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
 	</ItemGroup>
 
+
+	<ItemGroup>
+	  <ProjectReference Include="..\FluxoCaixa.Domain.Consolidado\FluxoCaixa.Domain.Consolidado.csproj" />
+	  <ProjectReference Include="..\FluxoCaixa.Domain.Master\FluxoCaixa.Domain.Master.csproj" />
+	  <ProjectReference Include="..\FluxoCaixa.Repository.Consolidado\FluxoCaixa.Repository.Consolidado.csproj" />
+	  <ProjectReference Include="..\FluxoCaixa.Repositoy.Log\FluxoCaixa.Repositoy.Log.csproj" />
+	  <ProjectReference Include="..\FluxoCaixa.Service.Consolidado\FluxoCaixa.Service.Consolidado.csproj" />
+	</ItemGroup>
+
 </Project>

@@ -61,7 +61,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.5 - Infra", "2.5 - Infra"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixa.Api.Config", "FluxoCaixa.Api.Config\FluxoCaixa.Api.Config.csproj", "{6D599C69-2275-405B-A8C0-B1BC37EAF2FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixa.Bus.Lancamentos", "FluxoCaixa.Bus.Lancamentos\FluxoCaixa.Bus.Lancamentos.csproj", "{B381C00D-46EC-491C-819C-8D27208E77AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixa.Bus.Lancamentos", "FluxoCaixa.Bus.Lancamentos\FluxoCaixa.Bus.Lancamentos.csproj", "{B381C00D-46EC-491C-819C-8D27208E77AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Testing", "6 - Testing", "{0892B32E-EE09-43E6-8F34-3E9F4A96E52B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Log Repository", "5 - Log Repository", "{D8642887-77FA-45CA-BD74-C1C0552F6785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixa.Repositoy.Log", "FluxoCaixa.Repositoy.Log\FluxoCaixa.Repositoy.Log.csproj", "{E8333AB9-87E5-400A-9E84-A3EC6F193DBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +135,10 @@ Global
 		{B381C00D-46EC-491C-819C-8D27208E77AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B381C00D-46EC-491C-819C-8D27208E77AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B381C00D-46EC-491C-819C-8D27208E77AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8333AB9-87E5-400A-9E84-A3EC6F193DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8333AB9-87E5-400A-9E84-A3EC6F193DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8333AB9-87E5-400A-9E84-A3EC6F193DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8333AB9-87E5-400A-9E84-A3EC6F193DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +170,7 @@ Global
 		{D031D278-1BDA-4B55-9644-297CE104C1C1} = {96A64FFF-D671-4867-A97C-A78C0E3DF23B}
 		{6D599C69-2275-405B-A8C0-B1BC37EAF2FE} = {E38F72B3-E304-45C9-8343-91839E273023}
 		{B381C00D-46EC-491C-819C-8D27208E77AE} = {0913E5BA-0205-4BCA-B63B-842668B2F6F6}
+		{E8333AB9-87E5-400A-9E84-A3EC6F193DBE} = {D8642887-77FA-45CA-BD74-C1C0552F6785}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {562C9638-0EA9-42AE-8080-D7E0E5038560}

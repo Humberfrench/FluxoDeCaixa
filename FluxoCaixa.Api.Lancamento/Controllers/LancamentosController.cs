@@ -1,5 +1,4 @@
 using Dietcode.Core.Lib;
-using FluxoCaixa.Api.Lancamento.Attributes;
 using FluxoCaixa.Api.Lancamento.Model;
 using FluxoCaixa.Domain.Lancamentos.Interfaces.Bus;
 using FluxoCaixa.Domain.Lancamentos.Messaging;
@@ -16,12 +15,10 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
     {
         public IBusService busService;
         private const string ROUTING_KEY = "Lancamentos";
-        private readonly IMemoryCache cache;
 
-        public LancamentosController(IBusService busService, IMemoryCache cache)
+        public LancamentosController(IBusService busService)
         {
             this.busService = busService;
-            this.cache = cache;
         }
 
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -30,7 +27,6 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Efetuar o Lançamento a Crédito.")]
         [HttpPost("Credito")]
-        [Cache("postCredito", 15)]
         public async Task<IActionResult> LancamentoCredito(PostCredito postCredito)
         {
             try
@@ -76,7 +72,6 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Efetuar o Lançamento a Debito.")]
         [HttpPost("Debito")]
-        [Cache("postDebito", 15)]
         public async Task<IActionResult> LancamentoDebito(PostDebito postDebito)
         {
             try

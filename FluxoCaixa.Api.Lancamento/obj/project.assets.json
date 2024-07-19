@@ -1057,6 +1057,7 @@
           "FluxoCaixa.Bus.Lancamentos": "1.0.0",
           "FluxoCaixa.Domain.Lancamentos": "1.0.0",
           "FluxoCaixa.Repository.Lancamentos": "1.0.0",
+          "FluxoCaixa.Repositoy.Log": "1.0.0",
           "FluxoCaixa.Service.Lancamentos": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
@@ -1091,6 +1092,29 @@
         },
         "runtime": {
           "bin/placeholder/FluxoCaixa.Repository.Lancamentos.dll": {}
+        }
+      },
+      "FluxoCaixa.Repositoy.Log/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "Dietcode.Core.Lib": "1.8.0",
+          "Dietcode.Database": "1.2.0",
+          "FluxoCaixa.Api.Config": "1.0.0",
+          "FluxoCaixa.Domain.Master": "1.0.0",
+          "Microsoft.Data.SqlClient": "5.2.1",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.2",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/FluxoCaixa.Repositoy.Log.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FluxoCaixa.Repositoy.Log.dll": {}
         }
       },
       "FluxoCaixa.Service.Lancamentos/1.0.0": {
@@ -2854,6 +2878,11 @@
       "type": "project",
       "path": "../FluxoCaixa.Repository.Lancamentos/FluxoCaixa.Repository.Lancamentos.csproj",
       "msbuildProject": "../FluxoCaixa.Repository.Lancamentos/FluxoCaixa.Repository.Lancamentos.csproj"
+    },
+    "FluxoCaixa.Repositoy.Log/1.0.0": {
+      "type": "project",
+      "path": "../FluxoCaixa.Repositoy.Log/FluxoCaixa.Repositoy.Log.csproj",
+      "msbuildProject": "../FluxoCaixa.Repositoy.Log/FluxoCaixa.Repositoy.Log.csproj"
     },
     "FluxoCaixa.Service.Lancamentos/1.0.0": {
       "type": "project",

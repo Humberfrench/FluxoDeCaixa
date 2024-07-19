@@ -26,6 +26,19 @@
             "related": ".xml"
           }
         }
+      },
+      "FluxoCaixa.Domain.Consolidado/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dietcode.Core.Lib": "1.8.0"
+        },
+        "compile": {
+          "bin/placeholder/FluxoCaixa.Domain.Consolidado.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FluxoCaixa.Domain.Consolidado.dll": {}
+        }
       }
     }
   },
@@ -70,11 +83,17 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "FluxoCaixa.Domain.Consolidado/1.0.0": {
+      "type": "project",
+      "path": "../FluxoCaixa.Domain.Consolidado/FluxoCaixa.Domain.Consolidado.csproj",
+      "msbuildProject": "../FluxoCaixa.Domain.Consolidado/FluxoCaixa.Domain.Consolidado.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Dietcode.Core.Lib >= 1.8.0"
+      "Dietcode.Core.Lib >= 1.8.0",
+      "FluxoCaixa.Domain.Consolidado >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -111,7 +130,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Consolidado\\FluxoCaixa.Domain.Consolidado.csproj": {
+              "projectPath": "E:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Consolidado\\FluxoCaixa.Domain.Consolidado.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxoCaixa.Api.Consolidado.Controllers
@@ -7,8 +8,11 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
     [Route("api/v1/[controller]")]
     public class QueryController : ControllerBase
     {
-        public QueryController()
+        private readonly IMemoryCache cache;
+
+        public QueryController(IMemoryCache cache)
         {
+            this.cache = cache;
         }
 
         [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]

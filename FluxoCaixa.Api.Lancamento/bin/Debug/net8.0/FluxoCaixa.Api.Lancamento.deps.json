@@ -620,6 +620,7 @@
           "FluxoCaixa.Bus.Lancamentos": "1.0.0",
           "FluxoCaixa.Domain.Lancamentos": "1.0.0",
           "FluxoCaixa.Repository.Lancamentos": "1.0.0",
+          "FluxoCaixa.Repositoy.Log": "1.0.0",
           "FluxoCaixa.Service.Lancamentos": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
@@ -646,6 +647,24 @@
         },
         "runtime": {
           "FluxoCaixa.Repository.Lancamentos.dll": {}
+        }
+      },
+      "FluxoCaixa.Repositoy.Log/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "Dietcode.Core.Lib": "1.8.0",
+          "Dietcode.Database": "1.2.0",
+          "FluxoCaixa.Api.Config": "1.0.0",
+          "FluxoCaixa.Domain.Master": "1.0.0",
+          "Microsoft.Data.SqlClient": "5.2.1",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.2",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "FluxoCaixa.Repositoy.Log.dll": {}
         }
       },
       "FluxoCaixa.Service.Lancamentos/1.0.0": {
@@ -1082,6 +1101,11 @@
       "sha512": ""
     },
     "FluxoCaixa.Repository.Lancamentos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluxoCaixa.Repositoy.Log/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
