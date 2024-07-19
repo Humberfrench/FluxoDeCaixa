@@ -1,4 +1,5 @@
 using Dietcode.Core.Lib;
+using FluxoCaixa.Api.Lancamento.Attributes;
 using FluxoCaixa.Api.Lancamento.Model;
 using FluxoCaixa.Domain.Lancamentos.Interfaces.Bus;
 using FluxoCaixa.Domain.Lancamentos.Messaging;

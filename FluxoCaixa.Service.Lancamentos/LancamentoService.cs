@@ -7,7 +7,8 @@ namespace FluxoCaixa.Service.Lancamentos
 {
     public class LancamentoService : ILancamentoService
     {
-        IRepositoryLancamento repositoryLancamento;
+        readonly IRepositoryLancamento repositoryLancamento;
+
         public LancamentoService(IRepositoryLancamento repositoryLancamento)
         {
             this.repositoryLancamento = repositoryLancamento;

@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|g:\\devdietcode\\banco carrefour\\fluxocaixa\\fluxocaixa.api.lancamento\\attributes\\cacheattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|solutionrelative:fluxocaixa.api.lancamento\\attributes\\cacheattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|g:\\devdietcode\\banco carrefour\\fluxocaixa\\fluxocaixa.api.lancamento\\controllers\\lancamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|solutionrelative:fluxocaixa.api.lancamento\\controllers\\lancamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|g:\\devdietcode\\banco carrefour\\fluxocaixa\\fluxocaixa.api.lancamento\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|solutionrelative:fluxocaixa.api.lancamento\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|g:\\devdietcode\\banco carrefour\\fluxocaixa\\fluxocaixa.api.lancamento\\controllers\\cachecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1842FF-A5E4-49F0-B7B0-E77965B621A3}|FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj|solutionrelative:fluxocaixa.api.lancamento\\controllers\\cachecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{700C369E-2B28-40B4-BF4F-AE36C91FF0EE}|FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj|g:\\devdietcode\\banco carrefour\\fluxocaixa\\fluxocaixa.service.lancamentos\\lancamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{700C369E-2B28-40B4-BF4F-AE36C91FF0EE}|FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj|solutionrelative:fluxocaixa.service.lancamentos\\lancamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,11 +50,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Startup.cs",
+              "RelativeDocumentMoniker": "FluxoCaixa.Api.Lancamento\\Startup.cs",
+              "ToolTip": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Startup.cs",
+              "RelativeToolTip": "FluxoCaixa.Api.Lancamento\\Startup.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA7wBIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:55:36.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CacheAttribute.cs",
+              "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Attributes\\CacheAttribute.cs",
+              "RelativeDocumentMoniker": "FluxoCaixa.Api.Lancamento\\Attributes\\CacheAttribute.cs",
+              "ToolTip": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Attributes\\CacheAttribute.cs",
+              "RelativeToolTip": "FluxoCaixa.Api.Lancamento\\Attributes\\CacheAttribute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:49:03.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LancamentosController.cs",
+              "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Controllers\\LancamentosController.cs",
+              "RelativeDocumentMoniker": "FluxoCaixa.Api.Lancamento\\Controllers\\LancamentosController.cs",
+              "ToolTip": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Controllers\\LancamentosController.cs",
+              "RelativeToolTip": "FluxoCaixa.Api.Lancamento\\Controllers\\LancamentosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:47:07.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CacheController.cs",
+              "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Controllers\\CacheController.cs",
+              "RelativeDocumentMoniker": "FluxoCaixa.Api.Lancamento\\Controllers\\CacheController.cs",
+              "ToolTip": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\Controllers\\CacheController.cs",
+              "RelativeToolTip": "FluxoCaixa.Api.Lancamento\\Controllers\\CacheController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T00:42:59.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RepositoryLancamento.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\RepositoryLancamento.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Repository.Lancamentos\\RepositoryLancamento.cs",
@@ -51,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "IRepositoryLancamento.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\Interfaces\\Repository\\IRepositoryLancamento.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Domain.Lancamentos\\Interfaces\\Repository\\IRepositoryLancamento.cs",
@@ -116,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "LancamentoCreatedSubscriber.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Worker\\Subscriber\\LancamentoCreatedSubscriber.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Worker\\Subscriber\\LancamentoCreatedSubscriber.cs",
@@ -129,20 +197,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LancamentoService.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\LancamentoService.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Service.Lancamentos\\LancamentoService.cs",
               "ToolTip": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\LancamentoService.cs",
               "RelativeToolTip": "FluxoCaixa.Service.Lancamentos\\LancamentoService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T00:15:33.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "LancamentosValue.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\ObjectValue\\LancamentosValue.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Domain.Lancamentos\\ObjectValue\\LancamentosValue.cs",
@@ -155,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ILancamentoService.cs",
               "DocumentMoniker": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\Interfaces\\Services\\ILancamentoService.cs",
               "RelativeDocumentMoniker": "FluxoCaixa.Domain.Lancamentos\\Interfaces\\Services\\ILancamentoService.cs",
