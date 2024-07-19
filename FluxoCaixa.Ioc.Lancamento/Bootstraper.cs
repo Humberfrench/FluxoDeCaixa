@@ -18,16 +18,6 @@ namespace FluxoCaixa.Ioc.Lancamento
                                        IConfiguration configuration)
         {
 
-            //    //Services
-            //    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            //    services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-
-            //    services.AddScoped(provider =>
-            //    {
-            //        var context = provider.GetService<IHttpContextAccessor>();
-            //        return new ClaimsPrincipal();
-            //    });
-
             services.AddSingleton<IConfiguration>(configuration);
 
             services.AddScoped<IBusService, BusService>();

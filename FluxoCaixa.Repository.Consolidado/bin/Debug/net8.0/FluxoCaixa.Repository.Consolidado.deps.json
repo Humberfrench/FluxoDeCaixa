@@ -10,7 +10,6 @@
         "dependencies": {
           "Dapper": "2.1.35",
           "Dietcode.Core.Lib": "1.8.0",
-          "Dietcode.Database": "1.2.0",
           "FluxoCaixa.Api.Config": "1.0.0",
           "FluxoCaixa.Domain.Consolidado": "1.0.0",
           "FluxoCaixa.Domain.Master": "1.0.0",

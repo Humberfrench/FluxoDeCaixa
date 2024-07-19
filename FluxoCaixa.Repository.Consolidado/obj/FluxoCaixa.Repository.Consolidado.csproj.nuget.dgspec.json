@@ -301,10 +301,6 @@
               "target": "Package",
               "version": "[1.8.0, )"
             },
-            "Dietcode.Database": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"

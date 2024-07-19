@@ -10,8 +10,4 @@
     <PackageReference Include="Dietcode.Core.Lib" Version="1.8.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ObjectValue\" />
-  </ItemGroup>
-
 </Project>

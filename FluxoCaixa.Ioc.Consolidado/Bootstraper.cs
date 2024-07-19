@@ -1,5 +1,7 @@
-﻿using FluxoCaixa.Domain.Consolidado.Interfaces.Services;
+﻿using FluxoCaixa.Domain.Consolidado.Interfaces.Repository;
+using FluxoCaixa.Domain.Consolidado.Interfaces.Services;
 using FluxoCaixa.Domain.Master.Interfaces;
+using FluxoCaixa.Repository.Consolidado;
 using FluxoCaixa.Repositoy.Log;
 using FluxoCaixa.Service.Lancamentos;
 using Microsoft.Extensions.Configuration;
@@ -14,20 +16,10 @@ namespace FluxoCaixa.Ioc.Consolidado
                                        IConfiguration configuration)
         {
 
-            //    //Services
-            //    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            //    services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-
-            //    services.AddScoped(provider =>
-            //    {
-            //        var context = provider.GetService<IHttpContextAccessor>();
-            //        return new ClaimsPrincipal();
-            //    });
-
-
             services.AddSingleton<IConfiguration>(configuration);
 
             services.AddScoped<ILancamentoService, LancamentoService>();
+            services.AddScoped<IRepositoryLancamento, RepositoryLancamento>();
             services.AddScoped<IRepositoryLog, RepositoryLog>();
 
         }

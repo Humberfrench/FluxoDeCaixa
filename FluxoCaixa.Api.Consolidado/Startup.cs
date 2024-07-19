@@ -20,6 +20,7 @@ namespace FluxoCaixa.Api.Consolidado
         {
 
             services.AddDistributedMemoryCache();
+            services.AddMemoryCache();
             services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.WriteIndented = true;

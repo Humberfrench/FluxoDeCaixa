@@ -1,15 +1,19 @@
 ﻿using Dietcode.Database.Enums;
 using FluxoCaixa.Api.Config;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace FluxoCaixa.Repository.Consolidado
 {
     public class RepositoryBase
     {
         private readonly IConfiguration config;
-
+        protected readonly IDbConnection Connection;
         public RepositoryBase(IConfiguration config)
         {
+            Connection = new SqlConnection();
+
             this.config = config;
             Configuration = new Configuration();
 
@@ -18,6 +22,8 @@ namespace FluxoCaixa.Repository.Consolidado
             Configuration = configData.Get<Configuration>() ?? new Configuration();
 
             connectionString = config.GetConnectionString("basic") ?? "";
+            Connection.ConnectionString = connectionString;
+            Connection.Open();
 
             banco = GetBanco(Configuration.DataBase);
         }
