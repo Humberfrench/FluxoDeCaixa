@@ -1,0 +1,17 @@
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.deps.json
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Domain.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Domain.Lancamentos.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.csproj.AssemblyReference.cache
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.GeneratedMSBuildEditorConfig.editorconfig
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.AssemblyInfoInputs.cache
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.AssemblyInfo.cs
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.csproj.CoreCompileInputs.cache
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCai.C0FAB187.Up2Date
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\refint\FluxoCaixa.Bus.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\obj\Debug\net8.0\ref\FluxoCaixa.Bus.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Domain.Master.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Bus.Lancamentos\bin\Debug\net8.0\FluxoCaixa.Domain.Master.pdb
