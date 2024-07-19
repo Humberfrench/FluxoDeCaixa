@@ -25,3 +25,6 @@ G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\obj\Deb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.dll
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\obj\Debug\net8.0\FluxoCai.8283378A.Up2Date
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Consolidado\obj\Debug\net8.0\FluxoCai.8283378A.Up2Date

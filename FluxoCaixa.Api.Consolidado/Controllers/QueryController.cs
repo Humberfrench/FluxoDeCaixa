@@ -66,7 +66,7 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
                 dados = (await lancamentoService.ObterLancamentosFaixaDeDataAteHoje(DateTime.Now.AddDays(-7))).ToList();
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
                 });
                 return Ok(dados);
             }
@@ -81,9 +81,9 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
         [HttpGet("Month")]
         public async Task<IActionResult> GetMonth()
         {
-            var cacheKey = $"cache-obterdomes-{DateTime.Now.ToString(format)}";
             var month = DateTime.Now.Month;
             var year = DateTime.Now.Year;
+            var cacheKey = $"cache-obterdomes-{DateTime.Now.ToString(format)}-mes-{month}-ano-{year}";
 
             if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
             {
@@ -94,7 +94,7 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
                 dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year)).ToList();
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
                 });
                 return Ok(dados);
             }
@@ -109,7 +109,7 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
         [HttpGet("Month/{month}")]
         public async Task<IActionResult> GetMonth(int month, int year)
         {
-            var cacheKey = $"cache-obterdomes-{DateTime.Now.ToString(format)}";
+            var cacheKey = $"cache-obterdomesespec-{DateTime.Now.ToString(format)}-mes-{month}-ano-{year}";
 
             if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
             {
@@ -120,7 +120,7 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
                 dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year)).ToList();
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
                 });
                 return Ok(dados);
             }
@@ -146,7 +146,7 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
                 dados = (await lancamentoService.ObterLancamentosFaixaDeDatas(dataInicial, dataFinal)).ToList();
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
                 });
                 return Ok(dados);
             }

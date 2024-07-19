@@ -35,3 +35,16 @@ E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\n
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Service.Consolidado.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Api.Config.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\obj\Debug\net8.0\FluxoCai.04DB9AC0.Up2Date
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Api.Config.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Master.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Repository.Consolidado.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Service.Consolidado.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Consolidado.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Domain.Master.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Repository.Consolidado.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Service.Consolidado.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\bin\Debug\net8.0\FluxoCaixa.Api.Config.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Consolidado\obj\Debug\net8.0\FluxoCai.04DB9AC0.Up2Date
