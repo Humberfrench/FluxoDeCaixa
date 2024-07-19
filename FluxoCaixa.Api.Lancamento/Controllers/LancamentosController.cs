@@ -5,6 +5,7 @@ using FluxoCaixa.Domain.Lancamentos.Interfaces.Bus;
 using FluxoCaixa.Domain.Lancamentos.Messaging;
 using FluxoCaixa.Domain.Lancamentos.ObjectValue;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxoCaixa.Api.Lancamento.Controllers
@@ -15,18 +16,21 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
     {
         public IBusService busService;
         private const string ROUTING_KEY = "Lancamentos";
+        private readonly IMemoryCache cache;
 
-        public LancamentosController(IBusService busService)
+        public LancamentosController(IBusService busService, IMemoryCache cache)
         {
             this.busService = busService;
+            this.cache = cache;
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Efetuar o Lançamento a Crédito.")]
         [HttpPost("Credito")]
+        [Cache("postCredito", 15)]
         public async Task<IActionResult> LancamentoCredito(PostCredito postCredito)
         {
             try
@@ -66,12 +70,13 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
 
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Efetuar o Lançamento a Debito.")]
         [HttpPost("Debito")]
+        [Cache("postDebito", 15)]
         public async Task<IActionResult> LancamentoDebito(PostDebito postDebito)
         {
             try
@@ -109,80 +114,6 @@ namespace FluxoCaixa.Api.Lancamento.Controllers
                 return BadRequest(erro);
             }
 
-        }
-
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
-        [SwaggerOperation(Summary = "Efetuar o Lançamento de Estorno.")]
-        [HttpPatch("Estorno")]
-        public async Task<IActionResult> LancamentoEstorno(PostEstorno postEstorno)
-        {
-            try
-            {
-                var lancamento = new Lancamentos
-                {
-                    Data = DateTime.Now,
-                    Descricao = postEstorno.Descricao,
-                    Observacao = postEstorno.Observacao,
-                    TipoLancamentoId = 1,
-                    Valor = postEstorno.Valor,
-                    Estornado = true
-                };
-
-                var @event = new Message
-                {
-                    Id = 1,
-                    Content = lancamento.ToJson(),
-                    CreatedAt = DateTime.Now
-                };
-
-                await busService.Publish(ROUTING_KEY, @event);
-
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                var erro = new ProblemDetails
-                {
-                    Title = "Erro ao efetuar o lançamento",
-                    Detail = ex.Message,
-                    Status = StatusCodes.Status400BadRequest,
-                    Type = "https://httpstatuses.com/400"
-                };
-                return BadRequest(erro);
-            }
-
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Post(Lancamentos lancamento)
-        {
-            try
-            {
-                var @event = new Message
-                {
-                    Id = 1,
-                    Content = lancamento.ToJson(),
-                    CreatedAt = DateTime.Now
-                };
-
-                await busService.Publish(ROUTING_KEY, @event);
-
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                var erro = new ProblemDetails
-                {
-                    Title = "Erro ao efetuar o lançamento",
-                    Detail = ex.Message,
-                    Status = StatusCodes.Status400BadRequest,
-                    Type = "https://httpstatuses.com/400"
-                };
-                return BadRequest(erro);
-            }
         }
     }
 }

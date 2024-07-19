@@ -1,3 +1,4 @@
+using static FluxoCaixa.Ioc.Lancamento.Bootstraper;
 using FluxoCaixa.Worker.Subscriber;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHostedService<LancamentoCreatedSubscriber>();
+Initializer(builder.Services);
 
 var app = builder.Build();
 

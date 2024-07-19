@@ -1,5 +1,5 @@
 ﻿using FluxoCaixa.Domain.Lancamentos.Interfaces.Repository;
-using FluxoCaixa.Domain.Lancamentos.Interfaces.Services;
+using FluxoCaixa.Domain.Lancamentos.Messaging;
 using FluxoCaixa.Domain.Master.Entity;
 using ObjectValue = FluxoCaixa.Domain.Lancamentos.ObjectValue;
 

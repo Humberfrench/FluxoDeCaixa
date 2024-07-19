@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FluxoCaixa.Domain.Lancamentos\FluxoCaixa.Domain.Lancamentos.csproj" />
+    <ProjectReference Include="..\FluxoCaixa.Ioc.Lancamento\FluxoCaixa.Ioc.Lancamento.csproj" />
   </ItemGroup>
 
 </Project>

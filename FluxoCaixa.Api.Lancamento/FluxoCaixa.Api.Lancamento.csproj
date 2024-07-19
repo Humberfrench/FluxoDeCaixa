@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Attributes\**" />
+    <Content Remove="Attributes\**" />
+    <EmbeddedResource Remove="Attributes\**" />
+    <None Remove="Attributes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CacheController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <PackageReference Include="Dietcode.Core.Lib" Version="1.8.0" />
 	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />

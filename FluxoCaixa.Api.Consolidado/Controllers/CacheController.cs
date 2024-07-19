@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace FluxoCaixa.Api.Lancamento.Controllers
+namespace FluxoCaixa.Api.Consolidado.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]

@@ -1,7 +1,7 @@
 ﻿using FluxoCaixa.Bus.Lancamentos;
 using FluxoCaixa.Domain.Lancamentos.Interfaces.Bus;
 using FluxoCaixa.Domain.Lancamentos.Interfaces.Repository;
-using FluxoCaixa.Domain.Lancamentos.Interfaces.Services;
+using FluxoCaixa.Domain.Lancamentos.Messaging;
 using FluxoCaixa.Repository.Lancamentos;
 using FluxoCaixa.Service.Lancamentos;
 using Microsoft.Extensions.Configuration;
@@ -31,7 +31,14 @@ namespace FluxoCaixa.Ioc.Lancamento
             services.AddScoped<IBusService, BusService>();
             services.AddScoped<ILancamentoService, LancamentoService>();
             services.AddScoped<IRepositoryLancamento, RepositoryLancamento>();
+        }
+        public static void Initializer(IServiceCollection services)
+        {
+
+            services.AddSingleton<ILancamentoService, LancamentoService>();
+            services.AddSingleton<IRepositoryLancamento, RepositoryLancamento>();
 
         }
+
     }
 }

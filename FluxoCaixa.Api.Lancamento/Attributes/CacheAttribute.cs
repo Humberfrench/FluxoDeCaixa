@@ -7,12 +7,9 @@ namespace FluxoCaixa.Api.Lancamento.Attributes
     [AttributeUsage(AttributeTargets.Method, Inherited = false, AllowMultiple = false)]
     public class CacheAttribute : Attribute
     {
-        //[Cache("myData", 2)] // Cache for 2 hours
-
-        private IMemoryCache _cache;
         private readonly string _cacheKey;
         private readonly TimeSpan _expiration;
-        //private readonly IServiceProvider _serviceProvider;
+
         public CacheAttribute(string cacheKey, int expirationInMinutes = 15)
         {
 
@@ -22,15 +19,15 @@ namespace FluxoCaixa.Api.Lancamento.Attributes
 
         public async Task<IActionResult> ExecuteAsync(Func<Task<IActionResult>> func, IServiceProvider _serviceProvider)
         {
-            _cache = (IMemoryCache)_serviceProvider.GetService(typeof(IMemoryCache));
-            if (_cache.TryGetValue(_cacheKey, out IActionResult result))
+            var cache = (IMemoryCache)_serviceProvider.GetService(typeof(IMemoryCache));
+            if (cache.TryGetValue(_cacheKey, out IActionResult result))
             {
                 return result;
             }
             else
             {
                 result = await func();
-                _cache.Set(_cacheKey, result, new MemoryCacheEntryOptions
+                cache.Set(_cacheKey, result, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = _expiration
                 });
