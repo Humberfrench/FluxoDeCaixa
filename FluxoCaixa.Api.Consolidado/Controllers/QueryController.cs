@@ -20,9 +20,9 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
             this.lancamentoService = lancamentoService;
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LancamentoConsolidado), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obter o consolidado do dia.")]
         [HttpGet("Dia")]
@@ -31,13 +31,13 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
 
             var cacheKey = $"cache-obterdia-{DateTime.Now.ToString(format)}";
 
-            if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
+            if (cache.TryGetValue(cacheKey, out LancamentoConsolidado dados))
             {
                 return Ok(dados);
             }
             else
             {
-                dados = (await lancamentoService.ObterLancamentosDia()).ToList();
+                dados = (await lancamentoService.ObterLancamentosDia());
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
@@ -47,9 +47,9 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
 
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LancamentoConsolidado), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obter o consolidado dos ultimos 7 dias.")]
         [HttpGet("SevenDays")]
@@ -57,13 +57,13 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
         {
             var cacheKey = $"cache-obter7dias-{DateTime.Now.AddDays(-7).ToString(format)}-{DateTime.Now.ToString(format)}";
 
-            if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
+            if (cache.TryGetValue(cacheKey, out LancamentoConsolidado dados))
             {
                 return Ok(dados);
             }
             else
             {
-                dados = (await lancamentoService.ObterLancamentosFaixaDeDataAteHoje(DateTime.Now.AddDays(-7))).ToList();
+                dados = (await lancamentoService.ObterLancamentosFaixaDeDataAteHoje(DateTime.Now.AddDays(-7)));
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
@@ -73,9 +73,9 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
 
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LancamentoConsolidado), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obter o consolidado do mês atual.")]
         [HttpGet("Month")]
@@ -85,13 +85,13 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
             var year = DateTime.Now.Year;
             var cacheKey = $"cache-obterdomes-{DateTime.Now.ToString(format)}-mes-{month}-ano-{year}";
 
-            if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
+            if (cache.TryGetValue(cacheKey, out LancamentoConsolidado dados))
             {
                 return Ok(dados);
             }
             else
             {
-                dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year)).ToList();
+                dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year));
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
@@ -101,23 +101,23 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
 
         }
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LancamentoConsolidado), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obter o consolidado do mês especifico.")]
-        [HttpGet("Month/{month}")]
+        [HttpGet("Month/{month}/{year}")]
         public async Task<IActionResult> GetMonth(int month, int year)
         {
             var cacheKey = $"cache-obterdomesespec-{DateTime.Now.ToString(format)}-mes-{month}-ano-{year}";
 
-            if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
+            if (cache.TryGetValue(cacheKey, out LancamentoConsolidado dados))
             {
                 return Ok(dados);
             }
             else
             {
-                dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year)).ToList();
+                dados = (await lancamentoService.ObterLancamentosMesEspecifico(month, year));
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
@@ -127,9 +127,9 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
         }
 
 
-        [ProducesResponseType(typeof(bool), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LancamentoConsolidado), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         [SwaggerOperation(Summary = "Obter o consolidado de um período. Inserir as datas no formato yyyy-mm-dd")]
         [HttpGet("Range/{dataInicial}/{dataFinal}")]
@@ -137,13 +137,13 @@ namespace FluxoCaixa.Api.Consolidado.Controllers
         {
             var cacheKey = $"cache-obterfaixadedatas-{dataInicial.ToString(format)}-{dataFinal.ToString(format)}";
 
-            if (cache.TryGetValue(cacheKey, out List<Lancamentos> dados))
+            if (cache.TryGetValue(cacheKey, out LancamentoConsolidado dados))
             {
                 return Ok(dados);
             }
             else
             {
-                dados = (await lancamentoService.ObterLancamentosFaixaDeDatas(dataInicial, dataFinal)).ToList();
+                dados = (await lancamentoService.ObterLancamentosFaixaDeDatas(dataInicial, dataFinal));
                 cache.Set(cacheKey, dados, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)

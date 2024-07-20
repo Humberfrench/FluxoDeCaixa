@@ -18,7 +18,7 @@ namespace FluxoCaixa.Worker.Subscriber
         private const string QUEUE = "Lancamentos";
         private readonly ILancamentoService lancamentoService;
         readonly IRepositoryLog repositoryLog;
-        public LancamentoCreatedSubscriber(ILancamentoService lancamentoService,IRepositoryLog repositoryLog)
+        public LancamentoCreatedSubscriber(ILancamentoService lancamentoService, IRepositoryLog repositoryLog)
         {
             this.lancamentoService = lancamentoService;
             this.repositoryLog = repositoryLog;
@@ -43,11 +43,11 @@ namespace FluxoCaixa.Worker.Subscriber
                 var content = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
 
                 var @event = JsonConvert.DeserializeObject<Message>(content);
-
-                await ProcessMessage(@event);
-                Console.WriteLine($"Message received: {content}");
-
-                _channel.BasicAck(eventArgs.DeliveryTag, false);
+                if (@event != null)
+                {
+                    await ProcessMessage(@event);
+                    _channel.BasicAck(eventArgs.DeliveryTag, false);
+                }
             };
 
             _channel.BasicConsume(queue: QUEUE, autoAck: false, consumer: consumer);
@@ -62,21 +62,19 @@ namespace FluxoCaixa.Worker.Subscriber
 
         private async Task ProcessMessage(Message message)
         {
-            var log = new Log
+            if (message.Content.IsNullOrEmptyOrWhiteSpace())
             {
-                Data = DateTime.Now,
-                Descricao = "Processando Mensagem",
-                Service = "Worker",
-                Method = "ProcessMessage",
-                Json = message.ToJson(),
-                Erros = ""
-            };
-            await repositoryLog.Add(log);
+                return;
+            }
 
             // Process message
             var lancamentos = JsonConvert.DeserializeObject<Lancamentos>(message.Content);
 
-            await lancamentoService.Lancar(lancamentos);
+            if (lancamentos != null)
+            {
+                await lancamentoService.Lancar(lancamentos);
+            }
+
         }
     }
 }

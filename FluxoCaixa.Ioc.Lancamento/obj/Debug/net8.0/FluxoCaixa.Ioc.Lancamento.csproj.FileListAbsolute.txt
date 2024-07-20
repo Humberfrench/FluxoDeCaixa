@@ -50,3 +50,5 @@ E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\ne
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCai.D689B2C8.Up2Date
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dietcode.Database.Attribute;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace FluxoCaixa.Domain.Master.Entity
             isValid = false;
             Erros = new List<string>();
         }
+        [WriteCol(false)]
         public virtual List<string> Erros { get; }
 
         public abstract bool IsValid();

@@ -112,7 +112,7 @@ namespace FluxoCaixa.Api.Lancamento
             {
                 c.EnableTryItOutByDefault();
 
-                c.DocumentTitle = "FluxoCaixa Api Consolidado";
+                c.DocumentTitle = "FluxoCaixa Api Lançamentos";
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "FluxoCaixa Api Lançamentos v1");
                 c.DefaultModelsExpandDepth(-1); // Disable swagger schemas at bottom
 

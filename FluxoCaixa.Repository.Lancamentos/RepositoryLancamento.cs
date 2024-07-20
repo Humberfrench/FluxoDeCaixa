@@ -18,5 +18,6 @@ namespace FluxoCaixa.Repository.Lancamentos
         {
             return await repository.AddAsync(lancamento);
         }
+
     }
 }

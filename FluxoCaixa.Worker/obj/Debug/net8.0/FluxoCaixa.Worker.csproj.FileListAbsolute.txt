@@ -177,3 +177,17 @@ E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\Flu
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.pdb
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Api.Config.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repository.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.dll
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Api.Config.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repository.Lancamentos.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Worker\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.pdb

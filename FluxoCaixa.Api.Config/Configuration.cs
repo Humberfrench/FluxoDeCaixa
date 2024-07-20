@@ -16,5 +16,7 @@ namespace FluxoCaixa.Api.Config
         [JsonProperty("DataBase")]
         public string DataBase { get; set; }
 
+        [JsonProperty("MyServices")]
+        public MyServices MyServices { get; set; }
     }
 }

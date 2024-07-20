@@ -4,11 +4,11 @@ namespace FluxoCaixa.Domain.Consolidado.Interfaces.Services
 {
     public interface ILancamentoService
     {
-        Task<IList<Lancamentos>> ObterLancamentos();
-        Task<IList<Lancamentos>> ObterLancamentosDia();
-        Task<IList<Lancamentos>> ObterLancamentosFaixaDeDatas(DateTime dataInicial, DateTime dataFinal);
-        Task<IList<Lancamentos>> ObterLancamentosFaixaDeDataAteHoje(DateTime dataInicial);
-        Task<IList<Lancamentos>> ObterLancamentosMesEspecifico(int month, int year);
+        Task<LancamentoConsolidado> ObterLancamentos();
+        Task<LancamentoConsolidado> ObterLancamentosDia();
+        Task<LancamentoConsolidado> ObterLancamentosFaixaDeDatas(DateTime dataInicial, DateTime dataFinal);
+        Task<LancamentoConsolidado> ObterLancamentosFaixaDeDataAteHoje(DateTime dataInicial);
+        Task<LancamentoConsolidado> ObterLancamentosMesEspecifico(int month, int year);
 
     }
 }

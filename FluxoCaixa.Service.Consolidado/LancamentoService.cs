@@ -11,31 +11,46 @@ namespace FluxoCaixa.Service.Lancamentos
         {
             this.repositoryLancamento = repositoryLancamento;
         }
-        public async Task<IList<Domain.Consolidado.ObjectValue.Lancamentos>> ObterLancamentos()
+        public async Task<Domain.Consolidado.ObjectValue.LancamentoConsolidado> ObterLancamentos()
         {
-            return await repositoryLancamento.ObterLancamentos();
+            var lancamentos = await repositoryLancamento.ObterLancamentos();
+            return ObterConsolidado(lancamentos.ToList());
         }
 
-        public async Task<IList<Domain.Consolidado.ObjectValue.Lancamentos>> ObterLancamentosDia()
+        public async Task<Domain.Consolidado.ObjectValue.LancamentoConsolidado> ObterLancamentosDia()
         {
-            return await repositoryLancamento.ObterLancamentosDia();
+            var lancamentos = await repositoryLancamento.ObterLancamentosDia();
+            return ObterConsolidado(lancamentos.ToList());
         }
 
-        public async Task<IList<Domain.Consolidado.ObjectValue.Lancamentos>> ObterLancamentosFaixaDeDataAteHoje(DateTime dataInicial)
+        public async Task<Domain.Consolidado.ObjectValue.LancamentoConsolidado> ObterLancamentosFaixaDeDataAteHoje(DateTime dataInicial)
         {
-            return await repositoryLancamento.ObterLancamentosFaixaDeDataAteHoje(dataInicial);
+            var lancamentos = await repositoryLancamento.ObterLancamentosFaixaDeDataAteHoje(dataInicial);
+            return ObterConsolidado(lancamentos.ToList());
         }
 
-        public async Task<IList<Domain.Consolidado.ObjectValue.Lancamentos>> ObterLancamentosFaixaDeDatas(DateTime dataInicial, DateTime dataFinal)
+        public async Task<Domain.Consolidado.ObjectValue.LancamentoConsolidado> ObterLancamentosFaixaDeDatas(DateTime dataInicial, DateTime dataFinal)
         {
-            return await repositoryLancamento.ObterLancamentosFaixaDeDatas(dataInicial,dataFinal);
+            var lancamentos = await repositoryLancamento.ObterLancamentosFaixaDeDatas(dataInicial, dataFinal);
+            return ObterConsolidado(lancamentos.ToList());
         }
 
-        public async Task<IList<Domain.Consolidado.ObjectValue.Lancamentos>> ObterLancamentosMesEspecifico(int month, int year)
+        public async Task<Domain.Consolidado.ObjectValue.LancamentoConsolidado> ObterLancamentosMesEspecifico(int month, int year)
         {
             //using link - only to demonstrate. Dapper in this case is more efficient
             var lancamentos = await repositoryLancamento.ObterLancamentos();
-            return lancamentos.Where(x => x.Data.Month == month && x.Data.Year == year).ToList();
+            var lancamentosRetorno = lancamentos.Where(x => x.Data.Month == month && x.Data.Year == year).ToList();
+            return ObterConsolidado(lancamentosRetorno);
+        }
+
+        private Domain.Consolidado.ObjectValue.LancamentoConsolidado ObterConsolidado(List<Domain.Consolidado.ObjectValue.Lancamentos> lancamentos)
+        {
+            var consolidado = new Domain.Consolidado.ObjectValue.LancamentoConsolidado();
+            consolidado.Lancamentos = lancamentos;
+            consolidado.Debitos = lancamentos.Where(x => x.TipoLancamentoId == 2).Sum(x => x.Valor);
+            consolidado.Creditos = lancamentos.Where(x => x.TipoLancamentoId == 1).Sum(x => x.Valor);
+            consolidado.Saldo = consolidado.Creditos + (consolidado.Debitos * -1);
+            return consolidado;
         }
     }
 }

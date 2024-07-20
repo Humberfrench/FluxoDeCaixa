@@ -3,7 +3,7 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace FluxoCaixa.Api.Consolidado.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class PingController : ControllerBase
     {

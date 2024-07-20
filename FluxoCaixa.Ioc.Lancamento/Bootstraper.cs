@@ -25,9 +25,10 @@ namespace FluxoCaixa.Ioc.Lancamento
             services.AddScoped<IRepositoryLancamento, RepositoryLancamento>();
             services.AddScoped<IRepositoryLog, RepositoryLog>();
         }
-        public static void Initializer(IServiceCollection services)
+        public static void InitializerWorker(IServiceCollection services, IConfiguration configuration)
         {
 
+            services.AddSingleton<IConfiguration>(configuration);
             services.AddSingleton<ILancamentoService, LancamentoService>();
             services.AddSingleton<IRepositoryLancamento, RepositoryLancamento>();
             services.AddSingleton<IRepositoryLog, RepositoryLog>();
