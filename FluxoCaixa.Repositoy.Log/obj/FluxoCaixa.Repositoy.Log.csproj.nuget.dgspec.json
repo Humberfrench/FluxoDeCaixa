@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {}
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {}
   },
   "projects": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
         "projectName": "FluxoCaixa.Api.Config",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,14 +80,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "projectName": "FluxoCaixa.Domain.Master",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,14 +160,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
         "projectName": "FluxoCaixa.Repositoy.Log",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -190,11 +190,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
               }
             }
           }

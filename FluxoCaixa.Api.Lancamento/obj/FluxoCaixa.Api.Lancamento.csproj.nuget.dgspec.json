@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj": {}
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj": {}
   },
   "projects": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj",
         "projectName": "FluxoCaixa.Api.Auth",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -95,14 +95,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
         "projectName": "FluxoCaixa.Api.Config",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -171,14 +171,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj",
         "projectName": "FluxoCaixa.Api.Lancamento",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\FluxoCaixa.Api.Lancamento.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Lancamento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -201,14 +201,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Auth\\FluxoCaixa.Api.Auth.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj"
               }
             }
           }
@@ -284,14 +284,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj",
         "projectName": "FluxoCaixa.Bus.Lancamentos",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -314,8 +314,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
               }
             }
           }
@@ -360,14 +360,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj",
         "projectName": "FluxoCaixa.Domain.Lancamentos",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -390,8 +390,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
               }
             }
           }
@@ -436,14 +436,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "projectName": "FluxoCaixa.Domain.Master",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -516,14 +516,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
         "projectName": "FluxoCaixa.Ioc.Lancamento",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -546,20 +546,20 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Bus.Lancamentos\\FluxoCaixa.Bus.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj"
               }
             }
           }
@@ -608,14 +608,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj",
         "projectName": "FluxoCaixa.Repository.Lancamentos",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\FluxoCaixa.Repository.Lancamentos.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repository.Lancamentos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -638,14 +638,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
               }
             }
           }
@@ -726,14 +726,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
         "projectName": "FluxoCaixa.Repositoy.Log",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\FluxoCaixa.Repositoy.Log.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Repositoy.Log\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -756,11 +756,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Api.Config\\FluxoCaixa.Api.Config.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
               }
             }
           }
@@ -837,14 +837,14 @@
         }
       }
     },
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj",
         "projectName": "FluxoCaixa.Service.Lancamentos",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\FluxoCaixa.Service.Lancamentos.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Service.Lancamentos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -867,11 +867,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
               },
-              "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
-                "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
+              "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj"
               }
             }
           }

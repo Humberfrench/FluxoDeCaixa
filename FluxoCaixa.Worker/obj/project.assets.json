@@ -2889,11 +2889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Worker\\FluxoCaixa.Worker.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Worker\\FluxoCaixa.Worker.csproj",
       "projectName": "FluxoCaixa.Worker",
-      "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Worker\\FluxoCaixa.Worker.csproj",
+      "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Worker\\FluxoCaixa.Worker.csproj",
       "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-      "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Worker\\obj\\",
+      "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Worker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2916,11 +2916,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
-              "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
+            "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Lancamentos\\FluxoCaixa.Domain.Lancamentos.csproj"
             },
-            "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
-              "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj"
+            "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj"
             }
           }
         }

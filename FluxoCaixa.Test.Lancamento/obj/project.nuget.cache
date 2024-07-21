@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kp5bDjPf62w=",
+  "dgSpecHash": "dKw4U/FpUE4=",
   "success": true,
-  "projectFilePath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Test.Lancamento\\FluxoCaixa.Test.Lancamento.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Test.Lancamento\\FluxoCaixa.Test.Lancamento.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\humbe\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\humbe\\.nuget\\packages\\dietcode.core.lib\\1.8.0\\dietcode.core.lib.1.8.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {}
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {}
   },
   "projects": {
-    "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
+    "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "projectName": "FluxoCaixa.Domain.Master",
-        "projectPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
+        "projectPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\FluxoCaixa.Domain.Master.csproj",
         "packagesPath": "C:\\Users\\humbe\\.nuget\\packages\\",
-        "outputPath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Domain.Master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

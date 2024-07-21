@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "v40+15oWGPk7i1hxJ0lmHacS9YROShG/bI4jqhLh0yo=",
+  "Source": "FluxoCaixa.Worker",
+  "BasePath": "_content/FluxoCaixa.Worker",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

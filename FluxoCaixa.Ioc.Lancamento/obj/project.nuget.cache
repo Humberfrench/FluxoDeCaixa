@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uOQLFOYh4X0=",
+  "dgSpecHash": "tBHV1jXG1Yw=",
   "success": true,
-  "projectFilePath": "G:\\DevDietcode\\Banco Carrefour\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\FluxoCaixa\\FluxoCaixa.Ioc.Lancamento\\FluxoCaixa.Ioc.Lancamento.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\humbe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\humbe\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

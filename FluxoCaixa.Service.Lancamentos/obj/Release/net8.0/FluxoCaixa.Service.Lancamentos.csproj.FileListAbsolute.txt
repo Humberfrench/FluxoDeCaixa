@@ -15,3 +15,21 @@ G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Rel
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\refint\FluxoCaixa.Service.Lancamentos.dll
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.pdb
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\ref\FluxoCaixa.Service.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Service.Lancamentos.deps.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Service.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Service.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Domain.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Domain.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\bin\Release\net8.0\FluxoCaixa.Domain.Master.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.csproj.AssemblyReference.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.AssemblyInfo.cs
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.sourcelink.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCai.F5DB6C2C.Up2Date
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\refint\FluxoCaixa.Service.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\FluxoCaixa.Service.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Service.Lancamentos\obj\Release\net8.0\ref\FluxoCaixa.Service.Lancamentos.dll

@@ -15,3 +15,21 @@ G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\n
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\refint\FluxoCaixa.Repositoy.Log.dll
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.pdb
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\ref\FluxoCaixa.Repositoy.Log.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Repositoy.Log.deps.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Repositoy.Log.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Repositoy.Log.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Api.Config.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Api.Config.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\bin\Release\net8.0\FluxoCaixa.Domain.Master.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.csproj.AssemblyReference.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.AssemblyInfo.cs
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.sourcelink.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCai.4BF500DF.Up2Date
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\refint\FluxoCaixa.Repositoy.Log.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\FluxoCaixa.Repositoy.Log.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Repositoy.Log\obj\Release\net8.0\ref\FluxoCaixa.Repositoy.Log.dll

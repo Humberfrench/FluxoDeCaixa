@@ -10,3 +10,16 @@ G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\n
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\refint\FluxoCaixa.Domain.Master.dll
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.pdb
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\ref\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\bin\Release\net8.0\FluxoCaixa.Domain.Master.deps.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\bin\Release\net8.0\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\bin\Release\net8.0\FluxoCaixa.Domain.Master.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.csproj.AssemblyReference.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.AssemblyInfo.cs
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.sourcelink.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\refint\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\FluxoCaixa.Domain.Master.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Domain.Master\obj\Release\net8.0\ref\FluxoCaixa.Domain.Master.dll

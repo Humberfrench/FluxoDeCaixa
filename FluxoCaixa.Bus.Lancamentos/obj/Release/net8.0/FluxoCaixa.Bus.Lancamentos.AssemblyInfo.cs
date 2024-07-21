@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluxoCaixa.Bus.Lancamentos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5d3066c2d7929f870e8fae4e59e7dc9ec17dcc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluxoCaixa.Bus.Lancamentos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluxoCaixa.Bus.Lancamentos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

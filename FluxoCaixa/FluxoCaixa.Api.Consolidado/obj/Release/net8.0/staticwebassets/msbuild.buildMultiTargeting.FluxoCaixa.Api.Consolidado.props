@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FluxoCaixa.Api.Consolidado.props" />
+</Project>
