@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluxoCaixa.Repositoy.Log")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0361a8d7afc9ba8ae5013087488102bba2a6cad2")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluxoCaixa.Repositoy.Log")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluxoCaixa.Repositoy.Log")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

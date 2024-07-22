@@ -19,6 +19,15 @@ namespace FluxoCaixa.Service.Lancamentos
             this.repositoryLog = repositoryLoo;
         }
 
+        public async Task<bool> Lancar(List<ObjectValue.Lancamentos> lancamentos)
+        {
+            foreach (var item in lancamentos)
+            {
+                var retorno = await Lancar(item);
+            }
+            return true;
+        }
+
         public async Task<bool> Lancar(ObjectValue.Lancamentos lancamentos)
         {
             Log log;
@@ -33,8 +42,8 @@ namespace FluxoCaixa.Service.Lancamentos
                 Estornado = lancamentos.Estornado
             };
 
-            if(!lancamento.IsValid())
-                {
+            if (!lancamento.IsValid())
+            {
                 log = new Log
                 {
                     Data = DateTime.Now,

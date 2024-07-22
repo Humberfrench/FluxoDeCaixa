@@ -52,3 +52,32 @@ E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\ne
 E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
 G:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.deps.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Api.Config.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Domain.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Domain.Master.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repository.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Bus.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Domain.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repository.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Repositoy.Log.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Service.Lancamentos.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Api.Config.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\bin\Debug\net8.0\FluxoCaixa.Domain.Master.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.csproj.AssemblyReference.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.AssemblyInfoInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.AssemblyInfo.cs
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.sourcelink.json
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCai.D689B2C8.Up2Date
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\refint\FluxoCaixa.Ioc.Lancamento.dll
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.pdb
+C:\Desenvolvimento\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\ref\FluxoCaixa.Ioc.Lancamento.dll
+E:\DevDietcode\Banco Carrefour\FluxoCaixa\FluxoCaixa.Ioc.Lancamento\obj\Debug\net8.0\FluxoCaixa.Ioc.Lancamento.sourcelink.json
