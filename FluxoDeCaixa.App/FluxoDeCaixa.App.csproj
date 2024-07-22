@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dietcode.Api.Core.Results" Version="1.1.5" />
+    <PackageReference Include="Dietcode.Core.DomainValidator" Version="1.1.0" />
+    <PackageReference Include="Dietcode.Core.Lib" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FluxoDeCaixa.Domain\FluxoDeCaixa.Domain.csproj" />
+    <ProjectReference Include="..\FluxodeCaixa.ViewModel\FluxodeCaixa.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

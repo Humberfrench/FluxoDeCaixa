@@ -1,6 +1,0 @@
-@FluxoCaixa.Worker_HostAddress = http://localhost:5197
-
-GET {{FluxoCaixa.Worker_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

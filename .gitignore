@@ -1,1 +1,9 @@
 .vs/
+FluxoDeCaixa.Api/obj/
+FluxoDeCaixa.App/obj/
+FluxoDeCaixa.Domain/obj/
+FluxoDeCaixa.Ioc/obj/
+FluxoDeCaixa.Repository/obj/
+FluxoDeCaixa.Service/obj/
+FluxodeCaixa.ViewModel/obj/
+ReverseEF/obj/
